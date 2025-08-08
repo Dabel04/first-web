@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+         :root {
+            --primary-color: #3f51b5;
+            --secondary-color: #ff5722;
+        }
+
+         .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+         footer {
+            background: #222;
+            color: white;
+            padding: 60px 0 0;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="fa fa-money"></i> InvestPro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="investment.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="investsign-up.html">Sign-Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investlogin.html">log in</a>
+                    </li>
+
+                     <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                         more
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#"> About Us </a>
+                            <a class="dropdown-item" href="#">Team</a>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <div class="container-fluid">
+        <h2 class="text-white text-center font-weight-bold"> welcome to our Log-In page</h2>
+
+        <div class="col-sm-12 col-xs-12 col-md-5 col-lg-5 col-xl-5 m-auto">
+
+            <div class="card shadow mt-2">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Log In Here</h4>
+                </div>
+
+                <div class="card-body">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <label form="Surname"><b>username</b></label>
+                            <input type="text" name="surname" class="form-control" placeholder="Enter username">
+                        </div>
+        
+                        <div class="form-group">
+                            <label form="password"><b>Password</b></label>
+                            <input type="password" name="password" class="form-control" placeholder="Enter password">
+
+                        <div class="text-center py-4">
+                            <button type="button" class="btn btn-primary text-white">Login</button>
+                        </div>
+                        <p class=" text-center py-1">Don't have an account? <a href="formregister.html">Sign-Up</a></p>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">About InvestPro</h5>
+                    <p>We are a leading financial advisory firm committed to helping our clients achieve their financial goals through smart investment strategies.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white mr-3"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <div class="footer-links">
+                        <a href="#">Stock Market</a>
+                        <a href="#">Retirement Planning</a>
+                        <a href="#">Real Estate</a>
+                        <a href="#">Tax Planning</a>
+                        <a href="#">Wealth Management</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <p><i class="fa fa-home mr-2"></i> 123 Financial Street, New York, NY</p>
+                    <p><i class="fa fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                    <p><i class="fa fa-envelope mr-2"></i> info@investpro.com</p>
+                </div>
+            </div>
+            <hr class="bg-light mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">&copy; 2023 InvestPro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="footer-links d-inline">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

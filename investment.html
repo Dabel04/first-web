@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment & Finance</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+   
+    <style>
+        :root {
+            --primary-color: #3f51b5;
+            --secondary-color: #ff5722;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .hero-section {
+            /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080') no-repeat center center; */
+            background-size: cover;
+            color: white;
+            /* padding: 150px 0; */
+        }
+        
+        .feature-box {
+            padding: 30px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .testimonial-card {
+            padding: 30px;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        .news-card {
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .news-date {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            padding: 60px 0 0;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="fa fa-money"></i> InvestPro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="investment.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="investsign-up.html">Sign-Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investlogin.html">log in</a>
+                    </li>
+
+                     <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                         more
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#"> About Us </a>
+                            <a class="dropdown-item" href="#">Team</a>
+                        </div>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container-fluid">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="image/bussiness2.jpg" alt="Los Angeles" width="100%" height="900px">
+                <div class="carousel-caption text-white">
+                   <h1 class="display-4 mb-4">Smart Investment For Your Future</h1>
+                    <p class="lead mb-5">We help you grow your money with our expert financial advice and investment strategies</p>
+                    <a href="#" class="btn btn-primary btn-lg mr-3">Get Started</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>   
+                </div>
+                <div class="carousel-item">
+                <img src="image/bussiness3.jpg" alt="Chicago" width="100%" height="900px">
+                <div class="carousel-caption text-dark">
+                   <h1 class="display-4 mb-4">Smart Investment For Your Future</h1>
+                    <p class="lead mb-5">We help you grow your money with our expert financial advice and investment strategies</p>
+                    <a href="#" class="btn btn-primary btn-lg mr-3">Get Started</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>   
+                </div>
+                <div class="carousel-item">
+                <img src="image/MS Officee.png" alt="New York" width="100%" height="900px">
+                <div class="carousel-caption text-dark">
+                  <h1 class="display-4 mb-4">Smart Investment For Your Future</h1>
+                    <p class="lead mb-5">We help you grow your money with our expert financial advice and investment strategies</p>
+                    <a href="#" class="btn btn-primary btn-lg mr-3">Get Started</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>   
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center text-white mb-5">
+                <h2>Our Investment Services</h2>
+                <p class="lead text-muted">We offer comprehensive financial solutions</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <h4>Stock Market</h4>
+                        <p>Professional stock market analysis and investment strategies to maximize your returns.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="fa fa-wheelchair"></i>
+                        </div>
+                        <h4>Retirement Planning</h4>
+                        <p>Secure your future with our tailored retirement plans and pension schemes.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <h4>Real Estate</h4>
+                        <p>Invest in profitable real estate properties with our expert guidance.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="image/bussiness1.jpg" width="600" height="400" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Our Company</h2>
+                    <p>With over 15 years of experience in the financial industry, we have helped thousands of clients achieve their financial goals.</p>
+                    <p>Our team of certified financial advisors provides personalized investment strategies tailored to your unique needs and risk tolerance.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary mr-2"></i> Certified financial experts</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary mr-2"></i> Transparent fee structure</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary mr-2"></i> Proven track record</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary mr-2"></i> 24/7 customer support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center text-white mb-5">
+                <h2>What Our Clients Say</h2>
+                <p class="lead text-muted">Trusted by thousands of investors worldwide</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="image/laptop1.jpg" alt="Client" class="testimonial-img">
+                        <p class="mb-4">"InvestPro helped me double my investment portfolio in just 2 years. Their advice is invaluable."</p>
+                        <h5>John Smith</h5>
+                        <p class="text-muted">CEO, TechCorp</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="image/laptop2.jpg" alt="Client" class="testimonial-img">
+                        <p class="mb-4">"The retirement plan they created for me gives me peace of mind about my future."</p>
+                        <h5>Sarah Johnson</h5>
+                        <p class="text-muted">Marketing Director</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="image/gj3u9k7sxusbwtdqe7xc5g.jpg" alt="Client" class="testimonial-img">
+                        <p class="mb-4">"Their real estate investment strategies have generated consistent passive income for me."</p>
+                        <h5>Michael Brown</h5>
+                        <p class="text-muted">Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Latest Financial News</h2>
+                <p class="lead text-muted">Stay updated with market trends</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <div class="position-relative">
+                            <img src="image/internet3.jpg" class="card-img-top" alt="News">
+                            <div class="news-date">May 15, 2023</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Market Trends for Q2 2023</h5>
+                            <p class="card-text">Analysis of emerging market trends and investment opportunities in the second quarter.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <div class="position-relative">
+                            <img src="image/internet.jpg" class="card-img-top" alt="News">
+                            <div class="news-date">April 28, 2023</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tax Saving Strategies</h5>
+                            <p class="card-text">Learn how to optimize your investments for maximum tax benefits this financial year.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card">
+                        <div class="position-relative">
+                            <img src="image/internet2.jpg" class="card-img-top" alt="News">
+                            <div class="news-date">April 10, 2023</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tech Stocks Analysis</h5>
+                            <p class="card-text">Which technology stocks are poised for growth in the current economic climate?</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Grow Your Wealth?</h2>
+            <p class="lead mb-5">Schedule a free consultation with one of our financial advisors today</p>
+            <a href="#" class="btn btn-light btn-lg mr-3">Get Started</a>
+            <a href="#" class="btn btn-outline-light btn-lg">Contact Us</a>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">About InvestPro</h5>
+                    <p>We are a leading financial advisory firm committed to helping our clients achieve their financial goals through smart investment strategies.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white mr-3"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <div class="footer-links">
+                        <a href="#">Stock Market</a>
+                        <a href="#">Retirement Planning</a>
+                        <a href="#">Real Estate</a>
+                        <a href="#">Tax Planning</a>
+                        <a href="#">Wealth Management</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <p><i class="fa fa-home mr-2"></i> 123 Financial Street, New York, NY</p>
+                    <p><i class="fa fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                    <p><i class="fa fa-envelope mr-2"></i> info@investpro.com</p>
+                </div>
+            </div>
+            <hr class="bg-light mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">&copy; 2023 InvestPro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="footer-links d-inline">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4 JS and dependencies -->
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
+
+                       

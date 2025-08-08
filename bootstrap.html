@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer Portfolio | Bootstrap 4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+        :root {
+            --primary-color: #6c63ff;
+            --dark-color: #333;
+            --light-color: #ffd3b6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+        }
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.3s;
+        }
+        .navbar.scrolled {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .nav-link {
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        .hero {
+            background: var(--light-color);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .btn-primary {
+            background: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-title h2 {
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            transition: all 0.5s;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .about {
+            background: var(--light-color);
+            padding: 100px 0;
+        }
+        .about-img {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .services {
+            padding: 100px 0;
+        }
+        .service-box {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .service-box:hover {
+            background: white;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transform: translateY(-10px);
+        }
+        .service-box i {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .contact {
+            background: var(--light-color);
+            padding: 100px 0;
+        }
+        .form-control {
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Design<span style="color: var(--primary-color);">Studio</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Ensure navbar toggler closes on nav-link click (for mobile)
+        $('.navbar-nav .nav-link').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>I'm Peter, a Web Designer</h1>
+            <p>I create beautiful, functional websites that help businesses grow online. Let's work together to bring your vision to life.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                   My Work
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title w-100">Enter Your Log In Details</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <form method="post" action="">
+                        <div class="form-group">
+                            <label form="Surname"><b>username</b></label>
+                            <input type="text" name="surname" class="form-control" placeholder="Enter username">
+                        </div>
+        
+                        <div class="form-group">
+                            <label form="password"><b>Password</b></label>
+                            <input type="password" name="password" class="form-control" placeholder="Enter password">
+
+                        <div class="text-center py-4">
+                            <button type="button" class="btn btn-dark text-white">Login</button>
+                        </div>
+                        <p class=" text-center py-1">Don't have an account? <a href="formregister.html">Sign-Up</a></p>
+                    </form>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+                        </div>
+                    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/gj3u9k7sxusbwtdqe7xc5g.jpg" alt="Project 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/laptop1.jpg" alt="Project 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/laptop2.jpg" alt="Project 3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/laptop3.jpg" alt="Project 4" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/laptop4.jpg" alt="Project 5" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="image/MS Officee.png" alt="Project 6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="image/MS Officee.png" alt="About Me" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Peter, a passionate web designer with over 5 years of experience creating stunning websites for clients worldwide.</p>
+                    <p>My approach combines aesthetic design with user experience principles to deliver websites that not only look great but also perform exceptionally.</p>
+                    <p>When I'm not designing, you can find me hiking, reading, or experimenting with new design trends.</p>
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-laptop"></i>
+                        <h3>Web Design</h3>
+                        <p>Custom website designs tailored to your brand and audience with a focus on user experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-refresh"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Websites that look and function perfectly on all devices, from desktop to mobile.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fa fa-search"></i>
+                        <h3>SEO Optimization</h3>
+                        <p>Built-in SEO best practices to help your website rank higher in search results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i> 123 Design Street, Creative City</p>
+                    <p><i class="fa fa-phone mr-2"></i> +1 234 567 890</p>
+                    <p><i class="fa fa-envelope mr-2"></i> hello@designstudio.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2023 Design Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+   <script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>  
+    <!-- <script>
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 100) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+    </script> -->
+</body>
+</html>
+
+
+
