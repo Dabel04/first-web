@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <style>
-         :root {
-            --primary-color: #3f51b5;
-            --secondary-color: #ff5722;
-        }
-
-         .bg-primary {
+            :root {
+      --primary-color: #003366;
+      --accent-color: #ff7f00;
+      --secondary-color: #f8f9fa;
+    }
+        .bg-primary {
+        background-color: var(--primary-color) !important;
+            }
+            
+            .btn-primary{
             background-color: var(--primary-color) !important;
         }
          body {
@@ -39,46 +43,23 @@
 </head>
 <body>
      <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <i class="fa fa-money"></i> InvestPro</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="investment.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="investsign-up.html">Sign-Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="investlogin.html">log in</a>
-                    </li>
-
-                     <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                         more
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Contact Us</a>
-                            <a class="dropdown-item" href="#"> About Us </a>
-                            <a class="dropdown-item" href="#">Team</a>
-                        </div>
-                    </div>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-line-chart"></i> INVESTPRO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="investment.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="investsign-up.html" class="nav-link">Sign Up</a></li>
+        <li class="nav-item active"><a href="investlogin.html" class="nav-link">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
      <div class="container-fluid">
         <h2 class="text-white text-center font-weight-bold"> welcome to our Log-In page</h2>
 
